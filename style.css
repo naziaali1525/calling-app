@@ -1,0 +1,167 @@
+
+
+.card-center
+{
+    display: flex;
+    justify-content: center;
+}
+
+.dialing-card
+{
+    width: 33%;
+}
+
+.number-list 
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 28px;
+    margin: auto;
+}
+
+li
+{
+    padding: 13px;
+}
+
+img:hover 
+{
+    cursor: pointer;
+    
+}
+
+.call-animation {
+    background-image: url('icons/svg/phone-green.svg');
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-color: honeydew;
+    width: 189px;
+    height: 189px;
+    position: relative;
+    top: 61px;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: solid 5px #fff;
+    animation: play 2s ease infinite;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+@keyframes play {
+
+    0% {
+        transform: scale(1);
+    }
+    15% {
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+    }
+    25% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4), 0 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+    25% {
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.4), 0 0 0 30px rgba(255, 255, 255, 0.2);
+    }
+
+}
+
+.outgoing-call
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 259px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 36px;
+    color: green;
+    flex-direction: column;
+}
+
+.disconnect 
+{
+    background-image: url('icons/svg/phone-disconnect.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: honeydew;
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    
+}
+@media screen and (max-width: 1236px) and (min-width: 320px ){
+    .dialing-card
+    {
+        width: 100%;
+    }
+    .card-center
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .number-list 
+    {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+        margin: 0;
+    }
+    .number-center
+    {
+        width: 100%;
+    }
+
+    li
+    {
+        padding: 9px;
+    }
+}
+
+@media screen and (max-width: 1148px) and (min-width: 790px ) {
+    
+    .card-center
+    {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 731px) and (min-width: 414px ) {
+
+    .dialing-card
+    {
+        width: 92%;
+    }
+
+}
+@media screen and (max-width: 1366px) and (min-width: 1024px ) {
+
+    .dialing-card
+    {
+        width: 38%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px ) {
+
+    .dialing-card
+    {
+        width: 51%;
+    }
+
+}
+
+
+
+
+
